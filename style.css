@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Gruppo", sans-serif;
+    color: aliceblue;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+a{
+    text-decoration: none;
+}
+.page1{
+    padding: 20px;
+    display: flex;
+justify-content: end;    height: 100vh;
+    flex-direction: column;
+    background:linear-gradient(rgba(0, 0, 0, 0.7500), rgba(0, 0, 0, 0.7500)), url(./assets/images/software-3682509_1280.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.content{
+    min-width: 300px;
+    align-self: flex-start;
+}
+.content h1{
+font-size: 15vw;
+font-weight:bolder;
+line-height: 10vw;
+}
+.content h2{
+    font-size: 3vw;
+}
+.content h3{
+line-height: 8vw;
+}
+.contact{
+    /* margin-top: 8vh; */
+    padding: 1vw;
+    border-radius: 18vh;
+    /* color:black; */
+    border:none;
+    font-weight: 900;
+    background-color: transparent;
+    border:2px solid rgba(255, 255, 255, 0.509);
+    cursor:pointer;
+    font-size: 1.5rem;
+
+}
+#i1 #c2{
+    color: yellow;
+}
+.open{
+    position:fixed;
+    top:7vh;
+    right:7vh;
+    border:1px solid rgb(255, 255, 255);
+    padding: 13px;
+    border-radius: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+.open span{
+    height:5px;
+    width:5px;
+    background-color: rgb(68, 255, 0);
+    display: inline-block;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+
+/* 2nde page  */
+
+.page2{
+    background:linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url(./assets/images/computer.jpg);
+    padding: 20px;
+    /* border:1px solid white; */
+   min-height:100vh;
+    background-color: brown;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.page2 h1{
+    font-size: 5rem;
+}
+.about{
+    overflow: hidden;
+    display: flex;
+    gap:10%
+}
+.about div{
+    min-width: 44.9%;
+    /* border:1px solid white; */
+    /* align-self: flex-start; */
+}
+.left{
+    text-align: left;
+    margin-top: 6%;
+    
+}
+.left h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+    /* border-bottom: 1px solid black; */
+    display: inline-block;
+    padding-bottom: 1vh;
+    font-weight: 900;
+}
+.left p{
+    margin-top: 3vh;
+    font-size: 1.3rem;
+}
+.right{
+    text-align: left;
+    margin-top: 6%;
+}
+.right h1{
+    
+    font-size: 3rem;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 3vh;
+}
+.skills span{
+text-transform: uppercase;
+padding: 1em;
+border:1px solid white;
+font-size: 1.1rem;
+cursor: pointer;
+}
+.page3{
+    width:100%;
+    height:100vh;
+    background-color: crimson;
+    padding:10vh 30vh;
+    z-index: 3;
+    position:relative;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url("./assets/images/sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.wrapper{
+    width:100%;
+    height:100%;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: flex-end;
+    gap:3vw
+    
+}
+.problem{
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: left;
+    gap: 10vh;
+}
+.problem h1{
+    font-size: 4rem;
+}
+.form{
+    background-color: rgb(255, 255, 255);
+    min-width:30%;
+    /* border:1px solid black; */
+    height:100%;
+    padding:40px;
+color: white;
+}
+.inner{
+    height:100%;
+}
+textarea{
+    padding:10px;
+    resize:none;
+    width:100%;
+    height:100%;
+    /* flex-grow: 1; */
+    background-color: transparent;
+    outline:none;
+    border:1px solid black;
+    border-radius: 2vh;
+    color:black;
+    font-weight: 800;
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.submit{
+    align-self: center;
+    width:100px;
+
+
+    font-weight: 800;
+    cursor:pointer
+
+  }
+
+.inner input{
+    padding:10px;
+    border:1px solid black;
+outline:none;
+/* background-color: transparent; */
+border-radius: 2vh;
+font-weight: 800;
+color:black
+}
+.forminner{
+    font-size: 15px;
+}
+::placeholder { 
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+  .form h1{
+    color:black
+  }
