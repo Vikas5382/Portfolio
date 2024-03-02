@@ -140,7 +140,7 @@ a {
 }
 
 .left h1 {
-    font-size: 4W;
+    font-size: 6vw;
     text-transform: capitalize;
     /* border-bottom: 1px solid black; */
     display: inline-block;
@@ -154,13 +154,14 @@ a {
 }
 
 .right {
+
     text-align: left;
     margin-top: 6%;
 }
 
 .right h1 {
 
-    font-size: 3vw;
+    font-size: 6vw;
 }
 
 .skills {
@@ -344,6 +345,9 @@ textarea {
         font-size: 8vw;
     }
     .left p{
+        font-size: 3vw;
+    }
+    .skills input{
         font-size: 3vw;
     }
 .skill span{
