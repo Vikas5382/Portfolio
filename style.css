@@ -1,75 +1,91 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: "Gruppo", sans-serif;
     color: aliceblue;
 }
+
 ::-webkit-scrollbar {
     display: none;
-  }
+}
 
-a{
+a {
     text-decoration: none;
 }
-.page1{
+
+.page1 {
     padding: 20px;
     display: flex;
-justify-content: end;    height: 100vh;
+    justify-content: end;
+    height: 100vh;
     flex-direction: column;
-    background:linear-gradient(rgba(0, 0, 0, 0.7500), rgba(0, 0, 0, 0.7500)), url(./assets/images/software-3682509_1280.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.7500), rgba(0, 0, 0, 0.7500)), url(./assets/images/software-3682509_1280.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 
 }
-.content{
-    min-width: 300px;
-    align-self: flex-start;
+
+.page1>* {
+    display: inline-block;
 }
-.content h1{
-font-size: 15vw;
-font-weight:bolder;
-line-height: 10vw;
+
+.content {
+    /* width: 100%; */
+    /* align-self: flex-start; */
 }
-.content h2{
-    font-size: 3vw;
+
+.content h1 {
+    font-size: 9rem;
+    font-weight: bolder;
+    line-height: 6rem;
 }
-.content h3{
-line-height: 8vw;
+
+.content h2 {
+    font-size: 2rem;
 }
-.contact{
+
+.content h3 {
+    line-height: 5vw;
+}
+
+.contact {
     /* margin-top: 8vh; */
-    padding: 1vw;
+    padding: 1vh;
     border-radius: 18vh;
     /* color:black; */
-    border:none;
+    border: none;
     font-weight: 900;
     background-color: transparent;
-    border:2px solid rgba(255, 255, 255, 0.509);
-    cursor:pointer;
+    border: 2px solid rgba(255, 255, 255, 0.509);
+    cursor: pointer;
     font-size: 1.5rem;
 
 }
-#i1 #c2{
+
+#i1 #c2 {
     color: yellow;
 }
-.open{
-    position:fixed;
-    top:7vh;
-    right:7vh;
-    border:1px solid rgb(255, 255, 255);
-    padding: 13px;
+
+.open {
+    position: fixed;
+    top: 7vh;
+    right: 7vh;
+    margin: auto;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1vw;
     border-radius: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor:pointer;
+    cursor: pointer;
 }
-.open span{
-    height:5px;
-    width:5px;
+
+.open span {
+    height: 5px;
+    width: 5px;
     background-color: rgb(68, 255, 0);
     display: inline-block;
     margin-right: 9px;
@@ -79,12 +95,19 @@ line-height: 8vw;
 
 /* 2nde page  */
 
-.page2{
-    background:linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url(./assets/images/computer.jpg);
-    padding: 20px;
+
+
+
+
+
+
+
+.page2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url(./assets/images/computer.jpg);
+    padding: 3vw;
+
     /* border:1px solid white; */
-   min-height:100vh;
-    background-color: brown;
+    /* min-height: 80vh; */
     z-index: 2;
     position: relative;
     text-align: center;
@@ -93,147 +116,287 @@ line-height: 8vw;
     background-position: center;
     background-attachment: fixed;
 }
-.page2 h1{
-    font-size: 5rem;
+
+.page2 h1 {
+    font-size: 6vw;
 }
-.about{
+
+.about {
     overflow: hidden;
     display: flex;
-    gap:10%
+    gap: 10%
 }
-.about div{
+
+.about div {
     min-width: 44.9%;
     /* border:1px solid white; */
     /* align-self: flex-start; */
 }
-.left{
+
+.left {
     text-align: left;
     margin-top: 6%;
-    
+
 }
-.left h1{
-    font-size: 3rem;
+
+.left h1 {
+    font-size: 4W;
     text-transform: capitalize;
     /* border-bottom: 1px solid black; */
     display: inline-block;
     padding-bottom: 1vh;
     font-weight: 900;
 }
-.left p{
+
+.left p {
     margin-top: 3vh;
-    font-size: 1.3rem;
+    font-size: 2vw;
 }
-.right{
+
+.right {
     text-align: left;
     margin-top: 6%;
 }
-.right h1{
-    
-    font-size: 3rem;
+
+.right h1 {
+
+    font-size: 3vw;
 }
-.skills{
+
+.skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 3vh;
+    gap: 2vw;
+    margin-top: 4vh;
 }
-.skills span{
-text-transform: uppercase;
-padding: 1em;
-border:1px solid white;
-font-size: 1.1rem;
-cursor: pointer;
+
+.skills span {
+    text-transform: uppercase;
+    padding: 0.5vw;
+    border: .1px solid white;
+    font-size: 2vw;
+    cursor: pointer;
 }
-.page3{
-    width:100%;
-    height:100vh;
-    background-color: crimson;
-    padding:10vh 30vh;
+
+.page3 {
+    width: 100%;
+    min-height: 50vh;
+    padding: 10vh 30vh;
     z-index: 3;
-    position:relative;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url("./assets/images/sky.jpg");
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url("./assets/images/sky.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.wrapper{
-    width:100%;
-    height:100%;
+.wrapper {
+    width: 100%;
+    height: 100%;
     /* border:1px solid black; */
     display: flex;
     justify-content: flex-end;
-    gap:3vw
-    
+    gap: 3vw
 }
-.problem{
-    display:flex;
+
+.problem {
+    display: flex;
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
     text-align: left;
-    gap: 10vh;
+    gap: 4vw;
 }
-.problem h1{
-    font-size: 4rem;
+
+.problem h1 {
+    font-size: 6vw;
 }
-.form{
+.problem h2{
+    font-size: 2vw;
+}
+.form {
     background-color: rgb(255, 255, 255);
-    min-width:30%;
+    min-width: 30%;
     /* border:1px solid black; */
-    height:100%;
-    padding:40px;
-color: white;
+    height: 100%;
+    padding: 4vw;
+    color: white;
 }
-.inner{
-    height:100%;
+
+.inner {
+    height: 100%;
 }
-textarea{
-    padding:10px;
-    resize:none;
-    width:100%;
-    height:100%;
+
+textarea {
+    padding: 10px;
+    resize: none;
+    width: 100%;
+    height: 100%;
     /* flex-grow: 1; */
     background-color: transparent;
-    outline:none;
-    border:1px solid black;
+    outline: none;
+    border: 1px solid black;
     border-radius: 2vh;
-    color:black;
+    color: black;
     font-weight: 800;
 }
+.form h1{
+    font-size:2.5vw;
+}
 
-.inner{
+.inner {
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    gap: 2vw;
 }
-.submit{
+
+.submit {
     align-self: center;
-    width:100px;
+    width: 100px;
 
 
     font-weight: 800;
-    cursor:pointer
-
-  }
-
-.inner input{
-    padding:10px;
-    border:1px solid black;
-outline:none;
-/* background-color: transparent; */
-border-radius: 2vh;
-font-weight: 800;
-color:black
+    cursor: pointer
 }
-.forminner{
-    font-size: 15px;
+
+.inner input {
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+    /* background-color: transparent; */
+    border-radius: 2vh;
+    font-weight: 800;
+    color: black
 }
-::placeholder { 
+
+.forminner {
+    font-size: 40px;
+}
+
+::placeholder {
     color: rgb(0, 0, 0);
     font-weight: 900;
 }
-  .form h1{
-    color:black
-  }
+
+.form h1 {
+    color: black
+}
+
+
+@media only screen and (max-width: 600px) {
+    html {
+        background-color: black;
+    }
+
+    .page1 {
+        justify-content: center;
+        align-items: center;
+        max-height: 300px;
+    }
+
+    .content {
+        /* margin:auto; */
+        /* text-align: center; */
+    }
+
+    .content h3 {
+        white-space: wrap;
+        font-size: 4vw;
+    }
+
+    .content h1 {
+        line-height: 15vw;
+        font-size: 20vw;
+    }
+
+    .content h2 {
+        line-height: 15vw;
+        font-size: 6vw;
+    }
+
+    .contact {
+        font-size: 4vw;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .open {
+        margin: auto;
+        position: absolute;
+        font-size: 4vw;
+        padding: min(1vh, 6vw);
+        top: 2vh;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .page2 {
+        min-height: 80vh;
+        height: auto;
+    }
+
+    .page2>h1 {
+        font-size: 8vw;
+    }
+    .left p{
+        font-size: 3vw;
+    }
+.skill span{
+    font-size: 3vw;
+}
+.problem h2{
+    font-size: 3vw;
+}
+   
+
+}
+
+@media only screen and (max-width: 350px) {
+    .open {
+        position: absolute;
+        top: 2vh;
+        margin: auto;
+        transform: translateX(-50%);
+        /* min-width: 5vw; */
+        width: auto;
+        text-wrap: nowrap;
+
+    }
+
+}
+
+@media only screen and (max-width: 1500px){
+    .wrapper {
+        flex-direction: column;
+    }
+    .forminner{
+        font-size: 2vw;
+    }
+
+    .problem {
+        width: 100%
+    }
+
+    .problem h1 {
+        font-size: 8vw;
+    }
+
+    .problem h2 {
+        font-size: 3vw;
+    }
+
+    .page3 {
+        padding: 10vw;
+    }
+
+.inner h1{
+    font-size: 5vw;
+    flex-wrap: nowrap;
+}
+
+}
